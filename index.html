@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tworzenie strony w Microsoft Azure</h1>
+        <h2>i rekordów DNS w Google Cloud</h2>
+    </header>
+    
+    <main>
+        <section>
+            <img src="images/0.png">
+            <p>Wchodzimy na stronę <a href="https://portal.azure.com">portal.azure.com</a> i za pomocą wyszukiwarki na górze przechodzimy do Kont magazynu.</p>
+        </section>
+
+        <section>
+            <img src="images/1.png">
+            <p>Tworzymy nowe konto magazynu naciskając przycisk <span class="highlight">Utwórz nowe konto magazynu</span> na środku strony (lub <span class="highlight">Utwórz</span> na górze).</p>
+        </section>
+
+        <section>
+            <img src="images/2.png">
+            <p>Tworzymy nową grupę zasobów i nadajemy jej nazwę, tak samo z nazwą konta magazynu. Wybieramy region geograficznie najbliższy nam.</p>
+        </section>
+
+        <section>
+            <img src="images/3.png">
+            <p>
+                Tworzymy nową grupę zasobów i nadajemy jej nazwę, tak samo z nazwą konta magazynu.
+                Wybieramy region geograficznie najbliższy nam.
+                Klikamy <span class="highlight">Przejrzyj i utwórz</span> na dole strony
+            </p>
+        </section>
+        
+        <section>
+            <img src="images/4.png">
+            <p>Czekamy na przetworzenie zmian. Gdy dojdzie do skutku klikamy <span class="highlight">Przejdź do zasobu</span>.</p>
+        </section>
+
+        <section>
+            <img src="images/5.png">
+            <p>
+                Z menu po lewej stronie wybieramy <span class="highlight">Sieć</span> a potem na górze <span class="highlight">Niestandardowa domena</span>.
+                W polu <span class="highlight">Nazwa domeny</span> wpisujemy naszą domenę.
+                Należy skopiować jeden z dwóch adresów widocznych w punkcie (1).
+            </p>
+        </section>
+
+        <section>
+            <img src="images/6.png">
+            <p>Z menu po lewej stronie wybieramy <span class="highlight">Konfiguracja</span>. <span class="highlight">Wymagany bezpieczny transfer</span> zmieniamy na Wyłączone.</p>
+        </section>
+
+        <section>
+            <img src="images/7.png">
+            <p>Przechodziny do <a href="https://console.cloud.google.com/net-services/dns/">Cloud DNS</a> w celu skonfigurowania naszej domeny. Wybieramy (lub tworzymy) naszą strefę.</p>
+        </section>
+
+        <section>
+            <img src="images/8.png">
+            <p>Dodajemy nowy rekord klikając <span class="highlight">Add new record set</span> na górze strony.</p>
+        </section>
+
+        <section>
+            <img src="images/9.png">
+            <p>
+                Uzupełniamy dane. W polu <span class="highlight">DNS Name</span> podajemy wcześniej wybraną przez nas nazwę domeny.
+                Ustawiamy <span class="highlight">Resource Record Type</span> na CNAME, a do <span class="highlight">Canocinal name</span> wklejamy skopiowany wcześniej adres.
+                Klikamy <span class="highlight">Create</span>.
+            </p>
+        </section>
+
+        <section>
+            <img src="images/10.png">
+            <p>
+                Wracamy do Microsoft Azure oraz do naszego Magazynu danych. Po prawej klikamy <span class="highlight">Kontenery</span>, a później kontener <span class="highlight">$web</span>.
+            </p>
+        </section>
+
+        <section>
+            <img src="images/11.png">
+            <p>
+                Przekazujemy pliki naszej strony za pomocą przycisku <span class="highlight">Przekaż</span> na górze strony.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
